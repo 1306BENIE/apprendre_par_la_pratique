@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    margin: auto; /*pour centrer la div*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+.container__image{
+    background-image: url('../assets/images/logo_lpelia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container__image--imgwidth{
+    height: 400px;
+    width: 400px;
+}
+
+.container__text--color{
+    color: blue;
+    padding: 20px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .container__image{
+        background-image: url('../assets/images/boutique.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+}
